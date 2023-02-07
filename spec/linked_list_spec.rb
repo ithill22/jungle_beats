@@ -50,4 +50,12 @@ RSpec.describe LinkedList do
     list.prepend('boop')
   end
 
+  it 'can insert data into list' do
+    list = LinkedList.new
+
+    list.insert(2, 'woo')
+
+    expect(list.insert(2, 'woo')).to eq('woo')
+  end
+
 end
