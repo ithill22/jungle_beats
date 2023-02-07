@@ -6,7 +6,7 @@ RSpec.describe LinkedList do
   it 'exists' do
     list = LinkedList.new
 
-    expect(list).to be_a LinkedList
+    expect(list).to be_a(LinkedList)
     expect(list.head).to eq(nil)
   end
 
