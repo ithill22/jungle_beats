@@ -26,6 +26,6 @@ RSpec.describe Node do
 
     new_node = node.append('deep')
 
-    expect(node.next_node).to eq new_node
+    expect(node.next_node).to eq(new_node)
   end
 end

@@ -20,17 +20,16 @@ class LinkedList
     end
   end
 
-#   def to_string
-#     current = @head
-#     @array = []
-#     if current
-#       @array << current.data
-#       until current.next_node.nil?
-#         current = current.next_node
-#         @array << current.data
-#       end
-#       @array.join(' ')
-    
-#     end
-#   end
+  def to_string
+    current = @head
+    @array = []
+    if current
+      @array << current.data
+      until current.next_node.nil?
+        current = current.next_node
+        @array << current.data
+      end
+      @array.join(' ')
+    end
+  end
 end

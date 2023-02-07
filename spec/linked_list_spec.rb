@@ -32,9 +32,17 @@ RSpec.describe LinkedList do
     data_a = list.append('doop')
     data_b = list.append('deep')
     
-    expect(list.head).to eq data_a
-    expect(list.head.next_node).to eq data_b
+    expect(list.head).to eq(data_a)
+    expect(list.head.next_node).to eq(data_b)
   end
+
+  it 'can change node to string' do
+    list = LinkedList.new
+
+    list.append('doop')
+
+    expect(list.to_string).to eq('doop')
+  end 
 
   # it 'changes data' do
   #   list = LinkedList.new
