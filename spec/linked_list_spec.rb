@@ -40,6 +40,6 @@ RSpec.describe LinkedList do
     list.append('doop')
     list.append('deep')
 
-    expect(list.append('deep')).to eq('deep')
+   expect(list.append('deep')).to eq('deep')
   end
 end
