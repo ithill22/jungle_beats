@@ -26,13 +26,15 @@ RSpec.describe LinkedList do
   #   expect(list.count).to eq(1)
   # end
 
-  # it 'can make a list' do
-  #   list = LinkedList.new
+  it 'can make a list' do
+    list = LinkedList.new
 
-  #   list.append('doop')
-
-  #   expect(list.to_string).to eq('doop')
-  # end
+    data_a = list.append('doop')
+    data_b = list.append('deep')
+    
+    expect(list.head).to eq data_a
+    expect(list.head.next_node).to eq data_b
+  end
 
   # it 'changes data' do
   #   list = LinkedList.new
