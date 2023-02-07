@@ -2,11 +2,10 @@ require './lib/node.rb'
 
 class LinkedList
   
-  attr_accessor :head, :count
+  attr_accessor :head
 
   def initialize
     @head = head
-    @count = 0
   end
 
   def append(data)
@@ -20,17 +19,17 @@ class LinkedList
     end
   end
 
-  def to_string
-    current = @head
-    @array = []
-    if current
-      @array << current.data
-      until current.next_node.nil?
-        current = current.next_node
-        @array << current.data
-      end
-      @array.join(' ')
+#   def to_string
+#     current = @head
+#     @array = []
+#     if current
+#       @array << current.data
+#       until current.next_node.nil?
+#         current = current.next_node
+#         @array << current.data
+#       end
+#       @array.join(' ')
     
-    end
-  end
+#     end
+#   end
 end

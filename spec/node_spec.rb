@@ -20,5 +20,12 @@ RSpec.describe Node do
 
     expect(node.next_node).to eq(nil)
   end
-  
+
+  it 'can add node to next_node' do
+    node = Node.new('plop')
+
+    new_node = node.append('deep')
+
+    expect(node.next_node).to eq new_node
+  end
 end
