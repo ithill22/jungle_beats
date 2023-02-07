@@ -63,5 +63,13 @@ class LinkedList
       new_arr.take(number).joing('')
     end
   end
+
+  def includes?(data)
+    current_node = @head
+    arr = (' ')
+    arr.include?(' ')
+    until arr.include?(' ')
+    end
+  end
   
 end

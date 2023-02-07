@@ -74,4 +74,17 @@ RSpec.describe LinkedList do
 
   end
 
+  it 'checks if information is included in list' do
+    list = LinkedList.new
+
+    data_a = list.append('doop')
+    data_b = list.append('deep')
+    data_c = list.append('woo')
+    data_d = list.append('blop')
+
+    expect(list.includes?('doop')).to eq true
+    expect(list.includes?('shu')).to eq false
+
+  end
+
 end
