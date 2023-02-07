@@ -55,19 +55,13 @@ class LinkedList
   end
 
   def find(position, number)
-    current_node = @head
-    arr = []
-    position.times do
-    current_node = current_node.next_node
+    arr = to_string.split
+    new_arr = arr.rotate(position)
+    if new_arr.count > 1
+      new_arr.take(number).join(' ')
+    else
+      new_arr.take(number).joing('')
     end
-
-    number.times do
-    arr << current_node.data
-    current_node = current_node.next_node
-    end
-
-  arr.join [' ']
-    
   end
   
 end
