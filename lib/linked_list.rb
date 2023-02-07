@@ -2,19 +2,20 @@ require './lib/node.rb'
 
 class LinkedList
   
-  attr_accessor :head
+  attr_accessor :head, :count
 
   def initialize
     @head = head
+    @count = 0
   end
 
   def append(data)
     current_node = Node.new(data)
     if @head.nil?
-      # @count += 1
+      @count += 1
       @head = current_node
     elsif data != current_node && current_node.next_node.nil?
-      # @count += 1
+      @count += 1
       @head.append(data)
     end
   end
