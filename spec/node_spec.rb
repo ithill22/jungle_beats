@@ -19,5 +19,16 @@ RSpec.describe Node do
 
     expect(node.next_node).to eq(nil)
   end
+
+  describe 'append(data)' do
+    it 'can assign node to next_node' do
+      node = Node.new('plop')
+
+      new_node = node.append('doop')
+
+      expect(node.next_node).to eq new_node
+    end
+  end
+
   
 end

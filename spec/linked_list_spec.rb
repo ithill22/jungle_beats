@@ -9,4 +9,11 @@ RSpec.describe LinkedList do
     expect(list).to be_a LinkedList
     expect(list.head).to eq(nil)
   end
+
+  it 'appends data' do
+    list = LinkedList.new
+    list.append('doop')
+
+    expect(list.head.data).to eq('doop')
+  end
 end
