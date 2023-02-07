@@ -53,5 +53,21 @@ class LinkedList
     node.append_node(next_node)
     current.append_node(node)
   end
+
+  def find(position, number)
+    current_node = @head
+    arr = []
+    position.times do
+    current_node = current_node.next_node
+    end
+
+    number.times do
+    arr << current_node.data
+    current_node = current_node.next_node
+    end
+
+  arr.join [' ']
+    
+  end
   
 end

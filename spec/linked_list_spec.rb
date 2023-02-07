@@ -62,4 +62,16 @@ RSpec.describe LinkedList do
     # expect(list.insert(2, 'woo')).to eq('woo')
   end
 
+  it 'can find a list of string' do
+    list = LinkedList.new
+
+    data_a = list.append('doop')
+    data_b = list.append('deep')
+    data_c = list.append('woo')
+    data_d = list.append('blop')
+
+    expect(list.find(2,1)).to eq('woo')
+
+  end
+
 end
