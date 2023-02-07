@@ -29,7 +29,8 @@ class LinkedList
         current = current.next_node
         @array << current.data
       end
-      @array.join(' ')
+      @array.compact.join(' ')
+      # @array.join(' ')
     end
   end
 
