@@ -1,3 +1,4 @@
+require 'rspec'
 require './lib/node'
 
 RSpec.describe Node do
