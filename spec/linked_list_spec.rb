@@ -10,13 +10,13 @@ RSpec.describe LinkedList do
     expect(list.head).to eq(nil)
   end
 
-  # it 'appends data' do
-  #   list = LinkedList.new
+  it 'appends data' do
+    list = LinkedList.new
     
-  #   list.append('doop')
+    list.append('doop')
 
-  #   expect(list.head.data).to eq('doop')
-  # end
+    expect(list.head.data).to eq('doop')
+  end
 
   # it 'can count' do
   #   list = LinkedList.new
