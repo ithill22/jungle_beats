@@ -44,13 +44,10 @@ RSpec.describe LinkedList do
     expect(list.to_string).to eq('doop')
   end 
 
-  # it 'changes data' do
-  #   list = LinkedList.new
-    
-  #   list.append('doop')
-  #   list.append('deep')
+  it 'can add data to beginning of list' do
+    list = LinkedList.new
 
-  #  expect(list.head).to eq('doop')
-  #  expect(list.head.next_node).to eq('deep')
-  # end
+    list.prepend('boop')
+  end
+
 end
