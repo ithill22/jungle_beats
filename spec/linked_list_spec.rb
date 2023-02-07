@@ -53,9 +53,13 @@ RSpec.describe LinkedList do
   it 'can insert data into list' do
     list = LinkedList.new
 
-    list.insert(2, 'woo')
+    data_a = list.append('doop')
+    data_b = list.append('deep')
+    data_c = list.insert(1, 'woo')
 
-    expect(list.insert(2, 'woo')).to eq('woo')
+    expect(list.to_string).to eq('doop woo deep')
+
+    # expect(list.insert(2, 'woo')).to eq('woo')
   end
 
 end
