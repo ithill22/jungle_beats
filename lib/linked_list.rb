@@ -65,11 +65,16 @@ class LinkedList
   end
 
   def includes?(data)
+    string = to_string.split
+    string.include?(data)
+  end
+
+  def pop
     current_node = @head
-    arr = (' ')
-    arr.include?(' ')
-    until arr.include?(' ')
+    until current_node.next_node.nil?
+      current_node = current_node.next_node
     end
+      current_node.data = nil
   end
   
 end

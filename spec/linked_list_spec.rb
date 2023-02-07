@@ -87,4 +87,18 @@ RSpec.describe LinkedList do
 
   end
 
+  it 'removes last item for list' do
+    list = LinkedList.new
+
+    data_a = list.append('doop')
+    data_b = list.append('deep')
+    data_c = list.append('woo')
+    data_d = list.append('blop')
+
+    expect(list.to_string).to eq('doop deep woo blop')
+    list.pop
+    expect(list.to_string).to eq('doop deep woo')
+
+  end
+
 end
